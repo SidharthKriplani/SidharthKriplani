@@ -1,7 +1,5 @@
 <div align="center">
 
-# Sidharth Kriplani
-
 **Senior ML Engineer · Production Systems · Governance-First ML**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sidharthkriplani)
@@ -131,6 +129,19 @@ docingestqa audit chunks.jsonl --output report.html
 
 ---
 
+### ⚖️ InferenceLens — Inference Cost/Quality Tradeoff Auditor
+[`inferencelens`](https://github.com/SidharthKriplani/inferencelens)
+
+Audits AI inference routing decisions — profiles calls across model configurations, finds the cost/quality Pareto frontier, and flags dominated configs with routing recommendations.
+
+```python
+from inferencelens import InferenceLens
+report = InferenceLens(task_type="summarization").profile(prompts)
+# → Pareto frontier, routing rules, PASS/WARN/FAIL verdict
+```
+
+---
+
 ## Applied Systems
 
 Three production pipelines applying the same principles under domain pressure:
@@ -151,7 +162,7 @@ Every project here addresses one of three failure modes in AI systems:
 
 **① How does it know it's working correctly?**  
 The system needs a verification signal independent of its own confidence.  
-[`TrialCheck`](https://github.com/SidharthKriplani/trialcheck_v0) · [`MetricLens`](https://github.com/SidharthKriplani/metriclens) · [`FeatureLeakageLens`](https://github.com/SidharthKriplani/featureleakagelens_v0) · [`DocIngestQA`](https://github.com/SidharthKriplani/docingestqa) · [`GoldenSetAuditor`](https://github.com/SidharthKriplani/goldensetauditor_v0) · [`RiskFrame`](https://github.com/SidharthKriplani/riskframe_platform) · [`PulseRank`](https://github.com/SidharthKriplani/pulserank_platform)
+[`TrialCheck`](https://github.com/SidharthKriplani/trialcheck_v0) · [`MetricLens`](https://github.com/SidharthKriplani/metriclens) · [`FeatureLeakageLens`](https://github.com/SidharthKriplani/featureleakagelens_v0) · [`DocIngestQA`](https://github.com/SidharthKriplani/docingestqa) · [`GoldenSetAuditor`](https://github.com/SidharthKriplani/goldensetauditor_v0) · [`RiskFrame`](https://github.com/SidharthKriplani/riskframe_platform) · [`PulseRank`](https://github.com/SidharthKriplani/pulserank_platform) · [`InferenceLens`](https://github.com/SidharthKriplani/inferencelens)
 
 **② When should it stop or escalate?**  
 The system needs explicit rules for when automated decisions require human judgment.  
