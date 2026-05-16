@@ -13,9 +13,9 @@
 
 ## What I Build
 
-I build **production-grade ML systems** — not models in notebooks. Every project here is a complete platform: training, evaluation, governance, monitoring, serving, and fairness — with evidence artifacts that prove each component works.
+I build **production-grade ML and AI systems** — not models in notebooks. Every project here is a complete platform: training, evaluation, governance, monitoring, serving, and fairness — with evidence artifacts that prove each component works.
 
-My focus areas: **recommendation systems**, **developer intelligence tooling**, **credit/risk decisioning**, **experiment analysis platforms**, and **ML data quality auditing**.
+My focus areas: **agentic LLM pipelines** with deterministic safety guarantees, **recommendation and ranking systems**, **credit and risk decisioning**, **developer intelligence tooling**, **experiment analysis platforms**, and **ML data quality auditing**.
 
 ---
 
@@ -128,6 +128,40 @@ Pre-indexing QA auditor for RAG document ingestion. Runs 11 deterministic checks
 pip install docingestqa
 docingestqa audit chunks.jsonl --output report.html
 ```
+
+---
+
+## Applied Systems
+
+Three production pipelines applying the same principles under domain pressure:
+
+| System | Domain | Primary Failure Mode |
+|--------|--------|----------------------|
+| [`lendflow`](https://github.com/SidharthKriplani/lendflow) | Financial underwriting | When to stop or escalate |
+| [`agentreliabilitylab`](https://github.com/SidharthKriplani/agentreliabilitylab) | Cyber threat triage | When to stop or escalate |
+| [`nexussupply`](https://github.com/SidharthKriplani/nexussupply) | Supplier risk intelligence | Conflicting signal fusion |
+
+Each uses LangGraph with deterministic-first architecture: scores are computed before LLM synthesis, escalation paths are explicit, and graceful degradation is guaranteed.
+
+---
+
+## The Thesis
+
+Every project here addresses one of three failure modes in AI systems:
+
+**① How does it know it's working correctly?**  
+The system needs a verification signal independent of its own confidence.  
+[`TrialCheck`](https://github.com/SidharthKriplani/trialcheck_v0) · [`MetricLens`](https://github.com/SidharthKriplani/metriclens) · [`FeatureLeakageLens`](https://github.com/SidharthKriplani/featureleakagelens_v0) · [`DocIngestQA`](https://github.com/SidharthKriplani/docingestqa) · [`GoldenSetAuditor`](https://github.com/SidharthKriplani/goldensetauditor_v0) · [`RiskFrame`](https://github.com/SidharthKriplani/riskframe_platform) · [`PulseRank`](https://github.com/SidharthKriplani/pulserank_platform)
+
+**② When should it stop or escalate?**  
+The system needs explicit rules for when automated decisions require human judgment.  
+[`MetaSignal`](https://github.com/SidharthKriplani/metasignal_platform) · [`LendFlow`](https://github.com/SidharthKriplani/lendflow) · [`AgentReliabilityLab`](https://github.com/SidharthKriplani/agentreliabilitylab)
+
+**③ How does it handle conflicting information?**  
+The system needs a deterministic anchor when multiple signals disagree.  
+[`DevPulse`](https://github.com/SidharthKriplani/devpulse_platform) · [`NexusSupply`](https://github.com/SidharthKriplani/nexussupply)
+
+> The original nine are domain-agnostic auditors. The three applied systems test the same thesis under production pressure.
 
 ---
 
