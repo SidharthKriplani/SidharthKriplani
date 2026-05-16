@@ -2,7 +2,7 @@
 
 **Senior ML Engineer · Production Systems · Governance-First ML**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)]([https://linkedin.com/in/sidharthkriplani](https://www.linkedin.com/in/sidharth-kriplani/))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sidharth-kriplani/)
 [![Email](https://img.shields.io/badge/Email-sidharthkriplani%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sidharthkriplani@gmail.com)
 
 </div>
