@@ -3,7 +3,7 @@
 **Senior ML Engineer · Production Systems · Governance-First ML**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sidharthkriplani)
-[![Email](https://img.shields.io/badge/Email-claudesubscription12%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:claudesubscription12@gmail.com)
+[![Email](https://img.shields.io/badge/Email-sidharthkriplani%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:sidharthkriplani@gmail.com)
 
 </div>
 
@@ -83,7 +83,7 @@ lens.decompose()  # → mix_effect, rate_effect, interaction_effect per segment
 ---
 
 ### 🧪 TrialCheck — A/B Experiment Readout Auditor
-[`trialcheck_v0`](https://github.com/SidharthKriplani/trialcheck_v0)
+[`trialcheck_v0`](https://github.com/SidharthKriplani/trialcheck)
 
 Platform-agnostic A/B experiment auditor. Catches SRM, underpowered tests, peeking violations, and multiple comparison issues before you ship a wrong decision.
 
@@ -94,7 +94,7 @@ trialcheck audit experiment_results.json --alpha 0.05 --min-power 0.80
 ---
 
 ### 🔬 FeatureLeakageLens — Pre-Training Leakage Detection
-[`featureleakagelens_v0`](https://github.com/SidharthKriplani/featureleakagelens_v0)
+[`featureleakagelens_v0`](https://github.com/SidharthKriplani/featureleakagelens)
 
 Pre-training tabular ML auditor for feature leakage. Detects target leakage, temporal leakage, train/test overlap, and near-duplicate features before you train.
 
@@ -106,7 +106,7 @@ report = LeakageAuditor(df_train, df_test, target="label").audit()
 ---
 
 ### 🏆 GoldenSetAuditor — LLM/RAG Evaluation Dataset QA
-[`goldensetauditor_v0`](https://github.com/SidharthKriplani/goldensetauditor_v0)
+[`goldensetauditor_v0`](https://github.com/SidharthKriplani/goldensetauditor)
 
 Evaluation dataset quality auditor for LLM and RAG applications. Validates golden sets for answer completeness, question ambiguity, context coverage, and contamination.
 
@@ -162,7 +162,7 @@ Every project here addresses one of three failure modes in AI systems:
 
 **① How does it know it's working correctly?**  
 The system needs a verification signal independent of its own confidence.  
-[`TrialCheck`](https://github.com/SidharthKriplani/trialcheck_v0) · [`MetricLens`](https://github.com/SidharthKriplani/metriclens) · [`FeatureLeakageLens`](https://github.com/SidharthKriplani/featureleakagelens_v0) · [`DocIngestQA`](https://github.com/SidharthKriplani/docingestqa) · [`GoldenSetAuditor`](https://github.com/SidharthKriplani/goldensetauditor_v0) · [`RiskFrame`](https://github.com/SidharthKriplani/riskframe_platform) · [`PulseRank`](https://github.com/SidharthKriplani/pulserank_platform) · [`InferenceLens`](https://github.com/SidharthKriplani/inferencelens)
+[`TrialCheck`](https://github.com/SidharthKriplani/trialcheck) · [`MetricLens`](https://github.com/SidharthKriplani/metriclens) · [`FeatureLeakageLens`](https://github.com/SidharthKriplani/featureleakagelens) · [`DocIngestQA`](https://github.com/SidharthKriplani/docingestqa) · [`GoldenSetAuditor`](https://github.com/SidharthKriplani/goldensetauditor) · [`RiskFrame`](https://github.com/SidharthKriplani/riskframe_platform) · [`PulseRank`](https://github.com/SidharthKriplani/pulserank_platform) · [`InferenceLens`](https://github.com/SidharthKriplani/inferencelens)
 
 **② When should it stop or escalate?**  
 The system needs explicit rules for when automated decisions require human judgment.  
